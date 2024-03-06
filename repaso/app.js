@@ -35,4 +35,13 @@ if (sanitize === isAfirmative) {
   response = "No te creo";
 }
 
-console.log(response);
+console.log(4 / "b");
+
+/* 
+Que tipos de datos en js, recuerdan?
+  1. string
+  2. number -> NaN, double, float, integer
+  3. boolean
+  4. undefined
+  5. null
+*/
