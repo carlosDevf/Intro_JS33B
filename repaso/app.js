@@ -44,4 +44,6 @@ Que tipos de datos en js, recuerdan?
   3. boolean
   4. undefined
   5. null
+  6. array
+  7. object
 */
