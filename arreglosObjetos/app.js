@@ -1,4 +1,5 @@
 // Arreglos -> array (matrices)
+// posición (index) - valor
 
 const frutas = ["🍓", "🥝", "🍏", "🍒", "🍉", "🍊🍐"];
 const numeros = [1, 4, 3, 5, 6, 12];
@@ -22,6 +23,7 @@ console.log(example[1][0][1]);
 console.log(frutas.length);
 
 // objetos -> object
+// clave - valor
 const precios = {
   course: 4999,
   carrera: 3999,
@@ -32,10 +34,23 @@ console.log(precios.master);
 // objetos de arreglos
 const cosaSuperRara = {
   cosa1: frutas,
-  cosa2: numeros
-}
+  cosa2: numeros,
+};
 
-console.log(cosaSuperRara.cosa1[0])
+console.log(cosaSuperRara.cosa1[0]);
 
 const dbPrecios = [precios, precios, precios]; // arrreglo de objetos
-console.log(dbPrecios[1].carrera)
+console.log(dbPrecios[1].carrera);
+
+const rootUser = {
+  rol: "admin",
+  name: "Roberto",
+  lastName: "Ramirez",
+  age: 20,
+  "full-name": "Roberto Ramirez",
+  fullName: "Roberto Ramirez",
+};
+
+console.log(rootUser.name);
+console.log(rootUser.fullName);
+console.log(rootUser["full-name"]); // esto no es la posición de un arreglo
