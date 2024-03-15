@@ -80,7 +80,7 @@ function calcularCostoTotal(programa, costoMensual) {
   } else if (programa === 2) {
     costoFinal = costoMensual * 6;
   } else if (programa === 3) {
-    costoFinal = costoMensual * 6;
+    costoFinal = costoMensual * 2;
   }
 
   return costoFinal;
