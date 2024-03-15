@@ -22,8 +22,8 @@ Finalmente, además del precio mensual con descuento, indicar al usuario cuánto
 
 /* 
   datos entrada
-  cual curso va a escoger?
-  tiene una beca?
+  --cual curso va a escoger?
+  --tiene una beca?
   
   operaciones
   --costo mensual
@@ -91,9 +91,34 @@ const costoTotal = calcularCostoTotal(programa, costoMensualConDescuento);
 
 console.log("El costo mensual del programa es: " + costoMensualConDescuento);
 
-console.log(
-  "El costo total del programa seleccionado  es: " + costoTotal
-);
+console.log("El costo total del programa seleccionado  es: " + costoTotal);
 
 // const title = document.querySelector("h1");
 // title.textContent = costoTotal;
+
+/* 
+11. Realizar un programa que ayude a calcular el total a pagar de acuerdo a la distancia recorrida por un vehículo con cargo extra por los litros consumidos, tomando en consideración lo siguiente:
+
+Si el vehículo es “coche”, el precio kilometro ha de ser 0.20, si es “moto” ha de ser 0.10 y si es “autobús” 0.5.
+
+"coche" * 0.20
+"moto" * 0.10
+"autobús" * 0.5
+
+Si los kilometros consumidos están entre 0 y 100 se ha de añadir 5 al costo total, si es mayor la cantidad de litros consumidos se ha de añadir 10 al total. 
+
+Considere qué: total a pagar = (precio kilometro x kms recorridos) + extra por litros consumidos. */
+
+/* 
+  datos de entrada
+  --tipo de vehículo
+  --distancia recorrida - km
+
+  operaciones
+  kilometros => están entre 0 y 100 -> extra = 5
+  kilometros => mayor a 100 -> extra = 10
+  total = (precio kilometro x kms recorridos) + extra
+
+  datos de salida
+  final a pagar
+*/
